@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temp Converter</title>
+    <link rel="stylesheet" href="./tempConv.css" />
+  </head>
+  <header>
+    Temperature Converter
+  </header>
+  <body>
+    <div>
+      <h1>Convert Farenheit to Celsius</h1>
+      <span class="span">Please enter degrees in Farenheit below</span>
+    </div>
+    <div class="upper-div">
+      <title>Celsius Conversions</title>
+      <input
+        class="first-input"
+        type="text"
+        placeholder="Type in degrees in Farenheit here"
+        id="temp-1"
+      /><input type="submit" value="Enter" id="submit" onclick="tempCalcFaren()" ></input>
+    </div>
+    <div class="temp-cels">
+      <p>Temperature in Celsius is: <span id="temp" ></span></p>
+    </div>
+    <div class="images">
+      <img class="image-1" id="freeze-img" src="./images/freeze-svg.webp"></img>
+      <img class="image-2" id="cold-img" src="./images/cold-svg.webp"></img>
+      <img class="image-3" id="warm-img" src="./images/warm-svg.webp"></img>
+      <img class="image-4" id="hot-img" src="./images/hot-svg.webp"></img>
+    </div>
+    <script src="tempConv.js"></script>
+  </body>
+</html>
